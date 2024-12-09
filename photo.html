@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>photo</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="photo.css">
+</head>
+<body>
+    <div class="noise"></div>
+    <div id="wrap">
+        <header>
+            <a href="index.html">瑛</a>
+            <div class="circle"></div>
+        </header>
+
+        <div id="menu">
+            <ul>
+                <li>
+                    <a href="2019.html">
+                        <h1>2018</h1>
+                        <p>중학생 시절의 낙서</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="2020.html">
+                        <h1>2020~</h1>
+                        <p>고등학생 시절의 그림들</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="2023.html">
+                        <h1>2023~</h1>
+                        <p>스무 살 이후의 그림들</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="photo.html">
+                        <h1>사진</h1>
+                        <p>사진 및 영상으로 남긴 기록들</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="diary.html">
+                        <h1>일기</h1>
+                        <p>기록된 일기</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <main>
+            <section id="sec1">
+                <video width="1920" height="1080" src="video/fireworks1.mp4" id="fireworks1" loop autoplay muted ></video>
+            </section>
+
+            <div class="big_container">
+                <section id="sec2">
+                    <div class="img">
+                        <img src="source/paper1.jpg" class="paper">
+                        <img src="img/photo_me_best.jpeg" class="imgs">
+                        <img src="source/memo4.png" class="memo1">
+                        <p>
+                            새벽에 애니메이션을 보는데 <br>
+                            나나가 자기한테 관심을 안 준다고 <br>
+                            책상에 올라왔다...
+                        </p>
+                    </div>
+                    <div class="img">
+                        <img src="source/paper1.jpg" class="paper">
+                        <img src="img/photo_friend.jpeg" class="imgs">
+                        <img src="source/memo5.png" class="memo1">
+                        <p>
+                            친구들과 을왕리 여행을 가서 <br>
+                            인생 첫 불꽃놀이를 했다. <br>
+                        </p>
+                    </div>
+                    <div class="img">
+                        <img src="source/paper1.jpg" class="paper">
+                        <img src="img/photo_night.jpeg" class="imgs">
+                        <img src="source/memo6.png" class="memo1">
+                        <p>
+                            작년 <br>
+                            동기 언니들과<br>팀플 촬영을 갔던 날의 하늘
+                        </p>
+                    </div>
+                        
+                    <div class="button_container">
+                        <button class="photo_btn">1</button>
+                        <button class="photo_btn">2</button>
+                        <button class="photo_btn">3</button>
+                    </div>
+                </section>
+    
+                <section id="sec3">
+                    <div class="poster">
+                        <img src="source/paper3.jpg" class="paper">
+                        <img src="img/photo_hand_star.jpeg" class="img1">
+                        <img src="img/photo_sea.jpeg" class="img2">
+                        <img src="img/photo_book.jpg" class="img3">
+                        <img src="img/photo_rillakkuma.png" class="img4">
+                        <img src="img/photo_me.jpeg" class="img5">
+                        <img src="img/photo_dog.jpeg" class="img6">
+                        <img src="source/flower20.png" class="flower1">
+                    </div>
+                </section>
+    
+                <section id="sec4">
+                    <div class="row">
+                        <video src="video/cars.mp4" class="video1"></video>
+                        <video src="video/in_car.mov" class="video2"></video>
+                        <video src="video/cars.mp4" class="video5"></video>
+                        <video src="video/lp.mov" class="video3"></video>
+                        <video src="video/me_picture.mov" class="video4"></video>
+                    </div>
+                </section>
+            </div>
+            
+            <div class="big_container2">
+                <div class="row">
+                    <img src="img/photo_book.jpg" class="drawing">
+                    <img src="img/photo_concert.jpeg" class="drawing">
+                    <img src="img/photo_dog.jpeg" class="drawing">
+                </div>
+                <div class="row">
+                    <img src="img/photo_friend.jpeg" class="drawing">
+                    <img src="img/photo_night.jpeg" class="drawing">
+                    <img src="img/photo_me.jpeg" class="drawing">
+                </div>
+                <div class="row">
+                    <img src="img/photo_me_best.jpeg" class="drawing">
+                    <img src="img/photo_pictures.jpeg" class="drawing">
+                    <img src="img/photo_sea.jpeg" class="drawing">
+                </div>
+            </div>
+            
+        </main>
+
+        <footer>
+            <div class="footer_img_box">
+                <img src="img/diary_drawing1.jpg" class="footer_img">
+            </div>
+            <div class="footer_logo_img">
+                <img src="svg/logo_img_.svg">
+            </div>
+            <ul>
+                <li><h6>2018년부터의 기록</h6></li>
+                <li><h6>@COPYRIGHT 2024.AYOUNG All Right Reserved.</h6></li>
+            </ul>
+            
+        </footer>
+    </div>
+
+
+<script src="common.js"></script>
+<script>
+    let imgs = document.querySelectorAll('.img');
+    let photoBtns = document.querySelectorAll('.photo_btn');
+
+    photoBtns.forEach((button, index) => {
+        button.addEventListener('click', () => {
+            imgs.forEach(img => img.style.display = 'none'); 
+            imgs[index].style.display = 'block'; 
+        });
+    });
+
+    setTimeout(() => {
+        document.querySelector('#fireworks1').style.opacity = 1;
+    }, 500)
+
+    const videos = document.querySelectorAll('video');
+
+    // 각 비디오 요소에 대해 이벤트를 추가합니다.
+    videos.forEach(video => {
+        // 마우스 호버 시 재생 이벤트 추가
+        video.addEventListener('mouseenter', () => {
+            // 비디오 재생
+            video.play();
+        });
+
+        // 마우스 호버 해제 시 일시 정지 이벤트 추가
+        video.addEventListener('mouseleave', () => {
+            // 비디오 일시 정지
+            video.pause();
+        });
+    });
+
+</script>
+</body>
+</html>

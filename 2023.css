@@ -1,0 +1,294 @@
+h2, p {
+    position: absolute;
+}
+/* 
+SECTION1=========================== */
+#sec1 {
+    height: 50vw;
+}
+#best {
+    width: 28vw;
+    opacity: 0;
+    transition: 2s ease;
+}
+
+/* 
+SECTION2 ================== */
+#sec2 {
+    height: 55vw;
+}
+#mint2 {
+    width: 58vw;
+    opacity: 0;
+    transition: 2s ease;
+}
+#sec2 h2 {
+    font-size: 2vw;
+    top: 28vw;
+}
+#sec2 p {
+    font-size: 1vw;
+    top: 31vw;
+}
+
+
+/* 
+SECTION3 =============================*/
+#sec3 {
+    height: 55vw;
+}
+#women {
+    width: 35vw;
+    left: 20vw;
+    opacity: 0;
+    transition: 2s ease;
+}
+#sec3 h2 {
+    left: 57vw;
+    opacity: 0;
+    top: 20vw;
+    transition: 2s ease;
+    font-size: 2vw;
+}
+#sec3 p {
+    left: 57vw;
+    opacity: 0;
+    transition: 2s ease;
+    font-size: 1vw;
+    top: 23vw;
+}
+
+
+/* 
+SECTION4======================== */
+
+#sec4 {
+    height: 50vw;
+}
+
+#sec4 .postcard1 {
+    background: #ba9e6d;
+}
+#sec4 .postcard1 .drawing1 {
+    width: 20vw;
+    box-shadow: 2px 2px 3px 3px #77674e;
+    top: 4vw;
+    left: 3vw;
+    transform: rotate(-2deg);
+}
+#sec4 .postcard1 .flower1 {
+    width: 16vw;
+    top: 3vw;
+    left: 15vw;
+    transform: rotate(15deg);
+}
+#sec4 .postcard1 .tape1 {
+    width: 7vw;
+    top: 25vw;
+    left: 15vw;
+    transform: rotate(15deg);
+}
+#sec4 .postcard1 .tape2 {
+    width: 7vw;
+    top: 2vw;
+    left: 10vw;
+    opacity: .9;
+}
+#sec4 .postcard1 .stamp1 {
+    width: 10vw;
+    left: 44vw;
+}
+#sec4 .postcard1 .stamp2 {
+    width: 8vw;
+    left: 50vw;
+}
+#sec4 .postcard1 .orbit {
+    font-size: 1vw;
+    top:30vw;
+    left: 35vw;
+}
+#sec4 .postcard1 .orbit span {
+    font-family: "Nanum Brush Script", cursive;
+    border-bottom: solid .2vw #77674e;
+}
+
+#sec4 .postcard2 {
+    background: #75d1ff;
+    display: none;
+}
+#sec4 .postcard2 .drawing1 {
+    width: 20vw;
+    box-shadow: 2px 2px 3px 3px #6e95c7;
+    left: 4vw;
+    top: 3vw;
+    transform: rotate(2deg);
+}
+#sec4 .postcard2 .flower1 {
+    width: 14vw;
+    top: 8vw;
+    left: 29vw;
+    transform: rotate(-12deg);
+}
+#sec4 .postcard2 .stamp1 {
+    width: 12vw;
+    left: 50vw;
+    top: 20vw;
+    transform: rotate(-20deg);
+}
+#sec4 .postcard2 .stamp2 {
+    width: 6vw;
+    top: 2vw;
+    left: 50vw;
+}
+#sec4 .postcard2 .stamp3 {
+    width: 7vw;
+    left: 45vw;
+    top: 3vw;
+}
+#sec4 .postcard2 .tape1 {
+    width: 10vw;
+    top: 3vw;
+    left: 2vw;
+    transform: rotate(-20deg);
+}
+#sec4 .postcard2 .tape2 {
+    width: 10vw;
+    left: 34vw;
+    top: 23vw;
+}
+#sec4 .postcard_btn_box {
+    left: 48vw;
+    top: 44vw;
+}
+#sec4 .postcard_btn2 {
+    left: 3vw;
+}
+#sec4 .postcard2 .border_bottom {
+    border: #6a7a8f solid .1vw;
+}
+#sec4 .postcard2 .border_vertical {
+    background: #6a7a8f;
+}
+#sec4 .postcard2 h4 {
+    text-align: center;
+    left: 38vw;
+}
+
+
+#sec5 {
+    height: 100vw;
+    transition: 1s ease;
+    margin-bottom: 0;
+}
+#sec5:hover {
+    background: #222;
+}
+#sec5 .poster {
+    position: absolute;
+    width: 60vw;
+    height: 93vw;
+    transition: 2s ease;
+    background: #1b1b1b;
+    overflow: hidden;
+}
+#sec5 .poster .paper {
+    mix-blend-mode: overlay;
+    top: 10vw;
+}
+#sec5 .poster .drawing1 {
+    width: 40.2vw;
+    filter: grayscale(90%);
+    mix-blend-mode: color-burn;
+}
+#sec5 .poster .drawing2 {
+    width: 17vw;
+    left: 43.1vw;
+    top: 13.5vw;
+}
+#sec5 .poster .drawing3 {
+    width: 23vw;
+    filter: grayscale(90);
+    top: 34.9vw;
+    transform: rotate(-90deg);
+    left: 35vw;
+}
+
+#sec5 .poster .drawing5 {
+    width: 24vw;
+    filter: grayscale(90);
+    top: 60vw;
+    left: 37vw;
+}
+#sec5 .poster .drawing6 {
+    width: 30vw;
+    left: 0;
+    filter: grayscale(90);
+    top: 40vw;
+}
+#sec5 .poster .drawing7 {
+    width: 19vw;
+    filter: grayscale(90);
+    left: 20vw;
+    top:60vw;
+    transform: rotate(3deg);
+    box-shadow: 2px 2px 3px 3px #444444;
+}
+#sec5 .poster [class*="drawing"] {
+    transition: 1s ease;
+}
+#sec5 .poster [class*="drawing"]:hover {
+    transform: scale(1.2);
+}
+#sec5 .poster h4 {
+    font-size: 1.5vw;
+    color: rgb(58, 58, 58);
+    top: 24vw;
+}
+#sec5 .poster .stamp1 {
+    width: 12vw;
+    left: 35vw;
+    top: 7vw;
+}
+#sec5 .poster .tape1 {
+    width: 12vw;
+    filter: grayscale(90);
+    top: 58.5vw;
+    left: 23vw;
+}
+
+.drawing_box1 {
+    background-image: url("adult/drawing1.png");
+}
+.drawing_box2 {
+    background-image: url("adult/drawing2.png");
+}
+.drawing_box3 {
+    background-image: url("adult/drawing3.png");
+}
+.drawing_box4 {
+    background-image: url("adult/drawing4.jpg");
+}
+.drawing_box5 {
+    background-image: url("adult/mint1.jpeg");
+}
+.drawing_box6 {
+    background-image: url("adult/women.png");
+}
+.drawing_box7 {
+    background-image: url("adult/pen1.jpeg");
+}
+.drawing_box8 {
+    background-image: url("adult/pen2.jpeg");
+}
+.drawing_box9 {
+    background-image: url("adult/pen3.jpeg");
+}
+.drawing_box10 {
+    background-image: url("adult/pen4.jpeg");
+}
+.drawing_box11 {
+    background-image: url("adult/pen5.jpeg");
+}
+.drawing_box12 {
+    background-image: url("adult/pen6.jpeg");
+}

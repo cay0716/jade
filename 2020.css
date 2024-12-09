@@ -1,0 +1,373 @@
+
+/* 
+SECTION1====================== */
+#sec1 {
+    height: 50vw;
+    transition: 1s ease;
+}
+#painting_main {
+    width: 28vw;
+    opacity: 0;
+    transition: 2s ease;
+}
+
+/* 
+SECTION2========================= */
+#sec2 {
+    height: 55vw;
+    transition: .8s ease;
+}
+#sec2:hover {
+    background: #222;
+}
+#sec2:hover h2 {
+    color: black;
+}
+#sec2:hover p {
+    color: black;
+}
+#drawing_main {
+    width: 35vw;
+    left: 20vw;
+    opacity: 0;
+    transition: 2s ease;
+}
+#sec2 h2 {
+    color: #e2e2e2;
+    font-size: 2.1vw;
+    width: 18vw;
+    left: 60vw;
+    top: 11vw;
+}
+#sec2 h2 span {
+    position: absolute;
+    width: 21vw;
+    left: 60vw;
+}
+#sec2 p {
+    font-size: 1.3vw;
+    width: 21vw;
+    left: 60vw;
+    
+    color: #e2e2e2;
+}
+.p_span {
+    font-weight: lighter;
+    color: #f4f4f4;}
+
+/* 
+SECTION3==================== */
+#sec3 {
+    height: 50vw;
+}
+#sec3:hover #painting_blue {
+    opacity: 1;
+}
+#painting_blue {
+    width: 58vw;
+    opacity: 0;
+    transition: 2s ease;
+}
+#sec3 h2, #sec3 p{
+    color: #fff;
+}
+#sec3 h2 {
+    position: absolute;
+    font-size: 1.5vw;
+}
+#sec3 p {
+    position: absolute;
+    font-size: 1vw;
+    top: 32vw;
+    text-align: center;
+}
+
+/* 
+SECTION4 ================== */
+#sec4 {
+    height: 105vw;
+    transition: 1s ease;
+}
+#sec4:hover {
+    background: #222;
+}
+#sec4 .poster {
+    position: absolute;
+    width: 60vw;
+    height: 93vw;
+    background: rgb(126, 122, 112);
+    top: 5vw;
+    overflow: hidden;
+    transition: 1s ease;
+}
+#sec4 .poster .paper {
+    mix-blend-mode: overlay;
+    top: 10vw;
+}
+#sec4 .poster .drawing1 {
+    width: 34vw;
+    box-shadow: 2px 2px 3px 3px #444444;
+    top: 46vw;
+}
+#sec4 .poster .drawing2 {
+    width: 20vw;
+    box-shadow: 2px 2px 3px 3px #444444;
+    top: 10vw;
+    left: 41vw;
+    filter: grayscale(100%);
+    transform: rotate(1deg);
+}
+#sec4 .poster .drawing3 {
+    width: 19vw;
+    top: 20vw;
+    box-shadow: 2px 2px 3px 3px #444444;
+    opacity: 0.7;
+}
+#sec4 .poster .drawing4 {
+    width: 19vw;
+    top: 64vw;
+    left: 39vw;
+    box-shadow: 2px 2px 3px 3px #444444;
+}
+#sec4 .poster .drawing5 {
+    width: 15vw;
+    box-shadow: 2px 2px 3px 3px #444444;
+    left: 41vw;
+    top: 46vw;
+    filter: grayscale(90%);
+}
+#sec4 .poster [class*="drawing"] {
+    transition: 1s ease;
+}
+#sec4 .poster [class*="drawing"]:hover {
+    transform: scale(1.2);
+}
+#sec4 .poster .img1 {
+    width: 9vw;
+    box-shadow: 2px 2px 3px 3px #444444;
+    left: 21vw;
+    top: 20vw;
+    filter: grayscale(90%);
+    transform: rotate(-1deg);
+}
+#sec4 .poster .tape1 {
+    width: 13vw;
+    top: 44vw;
+    left: 10vw;
+}
+#sec4 .poster .tape2{
+    width: 8vw;
+    top: 82vw;
+    left: 44vw;
+}
+#sec4 .poster .banner1 {
+    width: 40vw;
+    left: 10vw;
+    top: 41vw;
+}
+#sec4 .poster .flower1 {
+    width: 15vw;
+    top: 61vw;
+    left: 46vw;
+    transform: rotate(10deg);
+}
+#sec4 .poster h4 {
+    font-size: 1vw;
+    top: 3vw;
+    font-weight: normal;
+}
+
+
+#sec5 {
+    height: 50vw;
+}
+
+#sec5 .postcard1 {
+    position: absolute;
+    width: 60vw;
+    height: 35vw;
+    /* background-image: url("source/paper2.jpg");
+    background-size: contain;
+    background-repeat: no-repeat; */
+    background: rgb(158, 141, 107);
+    overflow: hidden;
+}
+
+#sec5 .postcard1 .drawing1 {
+    width: 20vw;
+    box-shadow: 2px 2px 3px 3px #77674e;
+    top: 3vw;
+    left: 3vw;
+    float: left;
+}
+#sec5 .postcard1 .tape1 {
+    width: 14vw;
+    left: 1vw;
+    top: 3vw;
+    opacity: 0.9;
+}
+#sec5 .postcard1 .tape2 {
+    width: 14vw;
+    top: 28vw;
+    left: 13vw;
+    transform: rotate(-10deg);
+    opacity: 0.9;
+}
+#sec5 .postcard1 .border_left {
+    position: absolute;
+    border-left: 0.2vw solid #77674e;
+    height: 25vw;
+    left: 31vw;
+    top: 5vw;
+}
+#sec5 .postcard1 .stamp1 {
+    width: 11vw;
+    left: 42vw;
+    top: 2vw;
+}
+#sec5 .postcard1 .stamp2 {
+    width: 8vw;
+    left: 49vw;
+    top: 2vw;
+}
+#sec5 .postcard1 .stamp3 {
+    width: 11vw;
+    left: 51vw;
+    top: 26vw;
+    transform: rotate(-20deg);
+}
+#sec5 .postcard1  .flower1 {
+    width: 13vw;
+    left: 16vw;
+    top: 13vw;
+    transform: rotate(20deg);
+
+}
+#sec5 .postcard1 p, #sec4 .postcard1 h4 {
+    font-family: "Nanum Brush Script", cursive;
+}
+#sec5 .postcard1 .orbit {
+    top: 31vw;
+    left: 3vw;
+    font-size: 1vw;
+}
+#sec5 .postcard1 .me {
+    font-size: 1.3vw;
+    top: 31vw;
+    left: 7vw;
+    transform: rotate(-3deg);
+}
+
+
+
+#sec5 .postcard2 {
+    display: none;
+    position: absolute;
+    width: 60vw;
+    height: 35vw;
+    background: #796c54;
+    overflow: hidden;
+}
+#sec5 .postcard2 img {
+    width: 10vw;
+}
+#sec5 .postcard2 .drawing1 {
+    width: 20vw;
+    box-shadow: 2px 2px 3px 3px #77674e;
+    top: 4vw;
+    left: 3vw;
+    float: left;
+}
+
+#sec5 .postcard2 .banner1 {
+    width: 34vw;
+    opacity: 0.8;
+    top: 1vw;
+    left: 14vw;
+    float: left;
+}
+#sec5 .postcard2 .banner2 {
+    width: 34vw;
+    opacity: 0.8;
+    top: 33vw;
+    left: 14vw;
+    float: left;
+}
+#sec5 .postcard2 .stamp1 {
+    width: 9vw;
+    left: 44vw;
+    top: 2vw;
+}
+#sec5 .postcard2 .stamp2 {
+    width: 5vw;
+    left: 53vw;
+    top: 1vw;
+}
+#sec5 .postcard2 .stamp3 {
+    width: 15vw;
+    left: 43vw;
+    top: 16vw;
+    transform: rotate(-15deg);
+}
+#sec5 .postcard2 .flower1 {
+    width: 10vw;
+    left: 18vw;
+    top: 22vw;
+    transform: rotate(20deg);
+}
+#sec5 .postcard2 .tape1 {
+    width: 8vw;
+    left: 18vw;
+    top: 28vw;
+    opacity: .8;
+    transform: rotate(-16deg);
+}
+#sec5 .postcard2 .tape2 {
+    width: 9vw;
+    top: 3vw;
+    left: 1vw;
+    transform: rotate(-20deg);
+}
+#sec5 .postcard2 .paper {
+    width: 70vw;
+}
+
+
+#sec5 .postcard_btn_box {
+    left: 48vw;
+    top: 44vw;
+}
+#sec5 .postcard_btn2 {
+    left: 3vw;
+}
+
+
+/* 
+.big_container {
+    display: none;
+} */
+
+.drawing_box1 {
+    background-image: url("student/drawing1.jpg");
+}
+.drawing_box2 {
+    background-image: url("student/drawing2.jpg");
+}
+.drawing_box3 {
+    background-image: url("student/drawing3.jpg");
+}
+.drawing_box4 {
+    background-image: url("student/drawing4.jpg");
+}
+.drawing_box5 {
+    background-image: url("student/drawing5.jpg");
+}
+.drawing_box6 {
+    background-image: url("student/drawing6.jpg");
+}
+.drawing_box7 {
+    background-image: url("student/drawing7.jpg");
+}
+.drawing_box8 {
+    background-image: url("student/drawing8.jpg");
+}

@@ -1,0 +1,325 @@
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Batang&family=Hi+Melody&family=Nanum+Brush+Script&family=Noto+Sans+KR:wght@100..900&family=Orbit&display=swap');
+
+.noise {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1001;
+    background-image: url('https://i.ibb.co/x3TCktM/645cbb8ec449398255b76326-noise.gif');
+    background-position: 0 0;
+    background-size: auto;
+    pointer-events: none;
+    opacity: 0.05;
+    transition: opacity .2s cubic-bezier(.445, .05, .55, .95);
+    visibility: visible;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body {
+    min-height: 100vh;
+    overflow-x: hidden;
+    font-family: "Noto Sans KR", sans-serif;
+}
+header {
+    position: absolute;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10000;
+}
+header ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+}
+header a{
+    text-decoration: none;
+    font-size: 2.5vw;
+    font-weight: bold;
+    color: rgb(67, 113, 98);
+    transition: .5s ease;
+}
+header a:hover {
+    color: rgb(139, 179, 165);
+}
+header .circle {
+    display: flex;
+    position: relative;
+    width: 1.5vw;
+    height: 1.5vw;
+    border: solid .3vw rgb(67, 113, 98);
+    border-radius: 50%;
+    transition: .5s ease;
+}
+header li {
+    margin: 0 1vw 0 0;
+    transition: .5s ease;
+}
+header .circle:hover,.normal:hover, .album:hover .box {
+    background: rgb(67, 113, 98);
+}
+header .circle:active {
+    background: rgb(67, 113, 98);
+}
+header .normal {
+    width: 1.5vw;
+    height: 1.5vw;
+    border: solid .1vw rgb(67, 113, 98);
+    border-radius: 20%;
+    transition: .5s ease;
+}
+header .row {
+    display: flex;
+    justify-content: space-between;
+}
+header .box {
+    width: 0.75vw;
+    height: 0.75vw;
+    border: solid .1vw rgb(67, 113, 98);
+    border-radius: 20%;
+    transition: .5s ease;
+}
+
+#menu {
+    z-index: 100;
+    font-family: "Noto Sans KR", sans-serif;
+    position: relative;
+    position: fixed;
+    background: #fff;
+    width: 100%;
+    height: 50vw;
+    display: none;
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+#menu.show {
+    opacity: 1;
+    display: block;
+}
+#menu ul {
+    position: absolute;
+    top: 4vw;
+    left: 20vw;
+    width: 20vw;
+    list-style-type: none;
+}
+#menu li {
+    margin: 4vw;
+}
+#menu a {
+    text-decoration: none;
+    color: rgb(58, 116, 97);
+    
+    transition: 1s ease;
+}
+#menu a:hover {
+    color: rgb(139, 179, 165);
+}
+#menu h1 {
+    font-size: 1.3vw;
+    position: relative;
+}
+#menu p {
+    font-size: 1vw;
+    
+}
+
+section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 10vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+section img {
+    position: absolute;
+    width: 100%;
+    object-fit: cover;
+}
+
+footer {
+    position: relative;
+    width: 100%;
+    height: 50vw;
+    overflow: hidden;
+    transition: 2s ease;
+}
+footer:hover {
+    background: rgb(92, 142, 125);
+}
+footer:hover .footer_img {
+    opacity: .5;
+}
+.footer_img_box {
+    position: absolute;
+    width: 100%;
+    height: 50vw;
+    overflow: hidden;
+}
+.footer_img {
+    position: absolute;
+    top: -10vw;
+    left: -9vw;
+    width: 40%;
+    filter: contrast(1.5) ;
+    mix-blend-mode: darken;
+    opacity: 0;
+    transition: 2s ease;
+}
+footer ul {
+    color: #fff;
+    position: relative;
+    top: 43vw;
+}
+footer li {
+    margin-bottom: 1vw;
+}
+footer h6 {
+    position: absolute;
+    left: 70vw;
+    font-size: 1vw;
+}
+.footer_logo_img {
+    position: absolute;
+    width: 12vw;
+    left: 70vw;
+    top: 8vw;
+}
+
+/* TEXT */
+.orbit {
+    font-family: "Orbit", sans-serif !important;
+}
+h1, h2, h3, h4, h5, h6, p {
+    position: absolute;
+}
+
+button {
+    position: absolute;
+}
+
+[class*="tape"] {
+    opacity: 0.9;
+}
+
+
+[class*="postcard"] {
+    position: absolute;
+    width: 60vw;
+    height: 35vw;
+    overflow: hidden
+}
+
+.border_bottom {
+    position: relative;
+    border: 0.1vw solid #77674e;
+    width: 20vw;
+    margin-bottom: 3vw;
+    left: 35vw;
+    top: 13vw;
+}
+
+.postcard_btn_box {
+    position: relative;
+    display: flex;
+    gap: 5vw;
+    justify-content: space-between;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: visible;
+}
+[class*="postcard_btn"] {
+    position: absolute;
+    width: 2vw;
+    height: 2vw;
+    font-size: 0.8vw;
+    border-radius: 50%;
+    border: none;
+    background: rgb(139, 179, 165);
+    color: #fff;
+    transition: .5s ease;
+}
+[class*="postcard_btn"]:hover {
+    background: rgb(95, 135, 121);
+    color: #fff;
+}
+.postcard_btn2 {
+    left: 3vw;
+}
+
+
+
+.border_vertical {
+    position: absolute;
+    width: .2vw;
+    height: 20vw;
+    background: #77674e;
+    top: 7vw;
+    left: 31vw;
+}
+.postcard1 h4, .postcard2 h4 {
+    font-family: "Nanum Brush Script", cursive;
+    font-weight: lighter;
+    line-height: 3vw;
+    font-size: 1.5vw;
+    left: 35vw;
+    top: 10vw;
+
+}
+.paper {
+    mix-blend-mode: overlay;
+}
+
+#sec1 {
+    transition: 1s ease;
+}
+#sec1 p {
+    text-align: center;
+}
+.big_container2 {
+    position: relative;
+    background: #fff;
+    display: none;
+    background: #222;
+    transition: 1s ease;
+    padding-bottom: 10vw;
+}
+.big_container2 .row {
+    position: relative;
+    margin-bottom: 1vw;
+    justify-content: center;
+    align-items: center;
+    gap: 1vw;
+    display: flex;
+}
+.big_container2  .row [class*="drawing_box"]{
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 15vw;
+    height: 23vw;
+    transition: 1s ease;
+}
+.big_container2 .row [class*="drawing_box"]:hover {
+    transform: scale(1.2);
+}
+.big_container2 .row .drawing {
+    height: 20vw;
+}
